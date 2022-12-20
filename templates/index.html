@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Phone Price Prediction</title>
+</head>
+
+<body style="background-color: rgb(23, 74, 77);">
+    <center>
+        <h1>Cell Phone Price Prediction </h1>
+        <form method="POST" action="/predicted">
+            <!-- Headings for the form -->
+            <div class="headingsContainer">
+                <h3 style="color:rgb(206, 26, 56);">Fill Above Details To Get Cell Phone Price</h3>
+            </div>
+    
+            <!-- Main container for all inputs -->
+            
+            <div class="mainContainer">
+                <label for="Sale" style="color:Tomato;">Phone Sale</label><br>
+                <input type="number" placeholder="Enter Sale" name="Sale" required>
+                <br><br>
+                
+                <label for="weight" style="color:Tomato;">Phone Weight</label><br>
+                <input step="any",type="number" placeholder="Enter Weight" name="weight" required>
+                <br><br>
+                
+                <label for="resoloution" style="color:Tomato;">Phone Resolution</label><br>
+                <input step="any",  type="number" placeholder="Enter Phone Resolution" name="resoloution" required>
+                <br><br>
+
+                <label for="ppi" style="color:Tomato;">ppi(Pixel Per Inch)</label><br>
+                <input type="number" placeholder="Enter ppi" name="ppi" required>
+                <br><br>
+
+                <label for="cpu_core" style="color:Tomato;">CPU Core</label><br>
+                <input type="number" placeholder="Enter CPU Core" name="cpu_core" required>
+                <br><br>
+
+                <label for="cpu_freq" style="color:Tomato;">CPU Frequency</label><br>
+                <input step="any", type="number" placeholder="Enter CPU Frequency" name="cpu_freq" required>
+                <br><br>
+
+                <label for="internal_mem" style="color:Tomato;">Phone Internal Meomery</label><br>
+                <input step="any", type="number" placeholder="Enter Phone Internal Meomery" name="internal_mem" required>
+                <br><br>
+
+                <label for="ram" style="color:Tomato;">Phone RAM</label><br>
+                <input step="any",type="number" placeholder="Enter RAM" name="ram" required>
+                <br><br>
+
+                <label for="RearCam" style="color:Tomato;">Rear Camera </label><br>
+                <input step="any", type="number" placeholder="Enter Rear Camera " name="RearCam" required>
+                <br><br>
+
+                <label for="Front_Cam" style="color:Tomato;">Front Camera </label><br>
+                <input step="any",type="number" placeholder="Enter Front camera" name="Front_Cam" required>
+                <br><br>
+
+                <label for="battery" style="color:Tomato;">Battery</label><br>
+                <input type="number" placeholder="Enter Battery" name="battery" required>
+                <br><br>
+
+                <label for="thickness" style="color:Tomato;">Phone Thickness</label><br>
+                <input step="any",type="number" placeholder="Phone Thickness" name="thickness" required>
+                <br><br>
+
+
+
+                
+               
+                <!-- Submit button -->
+                <input type="submit" value="Submit">
+                <br><br>
+                <h3 style="color:orange;">From above Description Phone Price will be<b style="color: black;"> {{ prediction }} /- Rs.</b> Only </h3>
+            </div>
+        </form>
+    </center>
+    
+
+
+</body>
+</html>
